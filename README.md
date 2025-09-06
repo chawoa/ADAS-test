@@ -9,3 +9,7 @@ sudo apt install -y libcamera-apps gstreamer1.0-tools \
 
 빌드 명령어 예시: g++ live_yolov4_tiny.cpp -o live_yolo `pkg-config --cflags --libs opencv4`
 ./live_yolo
+
+맥북에서 사용시
+#define USE_GSTREAMER 0
+cap.open(0, cv::CAP_AVFOUNDATION)
